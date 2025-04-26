@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 20px 120px;
+    position: fixed;
+    width: 100%;
+    
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .nav-links li a {
+    text-decoration: none; /* remove default underline */
+  position: relative;
+  color: black;
+  padding-bottom: 10px; 
+    
+  }
+  .nav-links li a::after{
+   content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #31d35c;
+  transition: width 0.3s ease;
+
+  }
+  .nav-links li a:hover::after {
+    width: 100%;
+    
+  }
+ .btn{
+    background: linear-gradient(to right, #18b14b, #0fff7b); 
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+    transition: filter 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+  }
+  .btn:hover{
+    filter: opacity(60%);
+  } 
+  .menu-toggle {
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: black;
+    display: none;
+    cursor: pointer;
+  }
+  .hero{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafafa;
+  }
+  .next{
+    padding: 120px;
+  }
+  .next h2{
+    font-size: 62.44px;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  .next p{
+    margin-bottom: 20px;
+  }
+  .phones{
+    background-image: url(images/bg-intro-desktop.svg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+  .sec1{
+    padding: 150px;
+    background-color: #f3f4f6;
+  }
+  .eaze h1{
+    font-weight: 400;
+  }
+  .eaze p{
+    color: #9698a6;
+    padding: 20px 0px;
+    font-size: 20px;
+  }
+  .stuffz{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-top: 50px;
+  }
+ 
+  .stuff p{
+    color: #9698a6;
+    line-height: 29px;
+  }
+  .stuff h2{
+    font-size: 25px;
+    padding: 20px 0px;
+    font-weight: 400;
+  }
+  .sec2{
+    padding: 130px;
+    background-color: #fafafa;
+  }
+  .cardz{
+    display: flex;
+    gap: 20px;
+  }
+  .card{
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .card img{
+    width:100%;
+    height: 40%;
+    margin-bottom: 20px;
+  }
+  .card h1{
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: 549.99;
+    color: #000;
+  }
+  .card p{
+    margin-bottom: 20px;
+  }
+  .img-text{
+    padding: 0px 20px;
+    color: #9698a6;
+  }
+  footer{
+    background-color: #2d314d;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px;
+  }
+  .eazy{
+    display: flex;
+    justify-content:space-evenly ;
+    gap: 60px;
+  }
+  .eazy img{
+    margin-bottom: 50px;
+    
+  }
+  .img{
+    width: 20%;
+  }
+  .eazy p{
+    line-height: 40px;
+    color: #d6d3d3;
+  }
+  .reqb button{
+    margin-bottom: 40px;
+  }
+  .reqb p{
+    color: #9698a6;
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      background: #fff;
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+      line-height: 30px;
+      margin: 30px;
+      align-items: center;
+      width: 80%;
+      border-radius: 5px;
+      box-shadow: 10px 10px 300px 60px #333;
+      display: none;
+    }
+    .navbar{
+        padding: 20px 40px;
+    }
+    .button{
+        display: none;
+    }
+    .nav-links.show {
+      display: flex;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .next{
+        padding: 10px;
+        text-align: center;
+    }
+    .next h2{
+        font-size: 50px;
+    }
+    .phones{
+        background-image: url(images/bg-intro-mobile.svg);   
+       }
+       .sec1{
+        padding: 30px;
+        text-align: center;
+       }
+       .stuffz{
+        display: flex;
+        flex-direction: column;
+       }
+       .cardz{
+        display: flex;
+        flex-direction: column;
+       }
+       .card{
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+       }
+       .sec2{
+        padding: 30px;
+       }
+       footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 30px;
+      
+       }
+       .eazy{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+       }
+       .ico{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+       }
+  }
