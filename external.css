@@ -33,8 +33,10 @@
 
   .nav-links li a {
     text-decoration: none; /* remove default underline */
-  position: relative;
-  color: black;
+
+    position: relative;
+
+    color: black;
   padding-bottom: 10px; 
     
   }
@@ -192,10 +194,11 @@
       line-height: 30px;
       margin: 30px;
       align-items: center;
-      width: 80%;
+      width: 65%;
       border-radius: 5px;
       box-shadow: 10px 10px 300px 60px #333;
-      display: none;
+      display: flex;
+      justify-content: center; 
     }
     .navbar{
         padding: 20px 40px;
